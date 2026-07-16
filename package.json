@@ -1,0 +1,24 @@
+{
+  "name": "kkn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.1",
+    "tailwindcss": "^4.3.2",
+    "vite": "^8.1.4"
+  }
+}
