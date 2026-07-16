@@ -51,7 +51,7 @@ export default function Main() {
     return (
         <div style={{ opacity: mounted ? 1 : 0, transform: mounted ? "none" : "translateY(8px)", transition: "opacity 400ms ease, transform 400ms ease" }}>
             {/* Topbar */}
-            <div className="sticky top-0 z-50 grid grid-cols-3 px-6 border-b border-gray-200 h-16 items-stretch bg-white/95 backdrop-blur shadow-sm">
+            <div className="sticky top-0 z-50 flex items-center justify-between px-6 border-b border-gray-200 h-16 bg-white/95 backdrop-blur shadow-sm">
 
                 {/* Title */}
                 <div className="flex items-center font-bold text-green-800 text-xl cursor">
@@ -59,7 +59,7 @@ export default function Main() {
                 </div>
 
                 {/* Section */}
-                <div className="flex flex-row justify-center text-gray-500 h-full">
+                <div className="flex-1 flex flex-row justify-center text-gray-500 h-full">
                     <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
                         <a href="#beranda">Beranda</a>
                     </div>
@@ -68,11 +68,13 @@ export default function Main() {
                         <a href="#unit">Unit Usaha</a>
                     </div>
 
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
+                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text--800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
                         <a href="#desa">Desa</a>
                     </div>
+                </div>
 
-                    <div className="flex items-center hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all ">
+                <div className="flex items-center text-gray-500 h-full">
+                    <div className="flex items-center hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all">
                         <div ref={dropdownRef} className="relative">
                             {/* Tombol Pemicu Dropdown */}
                             <button
@@ -119,9 +121,6 @@ export default function Main() {
                         <button className="hover:text-green-800" onClick={handleContactClick}>Kontak Kami</button>
                     </div>
                 </div>
-
-                {/* Spacer */}
-                <div></div>
             </div>
 
             {/* Beranda */}
@@ -137,7 +136,7 @@ export default function Main() {
             </section>
 
             {/* Unit Usaha */}
-            <section id="unit" className="py-12 bg-gray-100 scroll-mt-20">
+            <section id="unit" className="py-8 bg-gray-100 scroll-mt-20">
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="flex items-center justify-between mb-6 gap-4">
                         <h2 className="text-2xl font-semibold text-gray-800">Unit Usaha</h2>
