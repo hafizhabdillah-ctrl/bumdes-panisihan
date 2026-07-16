@@ -44,7 +44,7 @@ export default function TopBar({ showMainLinks = false }) {
             <button
               type="button"
               onClick={() => setIsOpen((prev) => !prev)}
-              className="flex items-center py-2 whitespace-nowrap focus:outline-none"
+              className="flex items-center py-4 whitespace-nowrap focus:outline-none cursor-pointer"
               aria-expanded={isOpen}
             >
               Tentang
@@ -58,7 +58,7 @@ export default function TopBar({ showMainLinks = false }) {
                 <button
                   type="button"
                   onClick={() => { setIsOpen(false); navigate('/tentang-kami'); }}
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
+                  className="block cursor-pointer w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
                 >
                   Tentang Kami
                 </button>
@@ -80,8 +80,8 @@ export default function TopBar({ showMainLinks = false }) {
             )}
           </div>
 
-          <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
-            <button className="hover:text-green-800" onClick={() => navigate('/contact')}>Kontak Kami</button>
+          <div className="flex items-center px-4 py-4 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
+            <button className="cursor-pointer hover:text-green-800" onClick={() => navigate('/contact')}>Kontak Kami</button>
           </div>
         </div>
     </div>

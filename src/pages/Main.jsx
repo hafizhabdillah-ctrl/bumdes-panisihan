@@ -60,15 +60,15 @@ export default function Main() {
 
                 {/* Section */}
                 <div className="flex-1 flex flex-row justify-center text-gray-500 h-full">
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
+                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-200 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
                         <a href="#beranda">Beranda</a>
                     </div>
 
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
+                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-200 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
                         <a href="#unit">Unit Usaha</a>
                     </div>
 
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text--800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
+                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-200 hover:text--800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
                         <a href="#desa">Desa</a>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default function Main() {
                             <button
                                 type="button"
                                 onClick={() => setIsOpen((prev) => !prev)}
-                                className="flex items-center px-4 py-2 whitespace-nowrap focus:outline-none"
+                                className="cursor-pointer flex items-center px-4 py-4 hover:bg-gray-200 whitespace-nowrap focus:outline-none"
                             >
                                 Tentang
                                 <svg className={`w-4 h-4 ml-1 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,8 +117,8 @@ export default function Main() {
                         </div>
                     </div>
 
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-100 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
-                        <button className="hover:text-green-800" onClick={handleContactClick}>Kontak Kami</button>
+                    <div className="flex items-center px-4 py-4 hover:bg-gray-200 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
+                        <button className="cursor-pointer hover:text-green-800" onClick={handleContactClick}>Kontak Kami</button>
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@ export default function Main() {
 
             {/* Footer */}
             <footer className="bg-green-900 text-green-50">
-                <div className="border-t border-green-800/50 py-4 text-center text-sm text-green-100/80">© {new Date().getFullYear()} BUMDes Panisihan.</div>
+                <div className="border-t border-green-800/50 py-4 text-center text-sm text-green-100/80">© {new Date().getFullYear()} BUMDes Panisihan - KKN Tematik Literasi Universitas Jenderal Soedirman</div>
             </footer>
         </div>
     )

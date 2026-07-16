@@ -7,6 +7,10 @@ import PotensiDesa from './pages/PotensiDesa';
 import Contact from './pages/Contact';
 
 import SportCenter from './pages/Unit/SportCenter';
+import PeternakanKambing from './pages/Unit/PeternakanKambing';
+import KolamRenang from './pages/Unit/KolamRenang';
+import Playground from './pages/Unit/Playground';
+import Umkm from './pages/Unit/Umkm';
 
 export default function App() {
   return (
@@ -19,6 +23,10 @@ export default function App() {
         <Route path='/contact' element={<Contact />} />
 
         <Route path='/unit/sport-center' element={<SportCenter />} />
+        <Route path='/unit/peternakan-kambing' element={<PeternakanKambing />} />
+        <Route path='/unit/kolam-renang' element={<KolamRenang />} />
+        <Route path='/unit/playground' element={<Playground />} />
+        <Route path='/unit/umkm' element={<Umkm />} />
       </Routes>
     </div>
   );
