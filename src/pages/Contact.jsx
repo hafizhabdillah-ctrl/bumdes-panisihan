@@ -15,7 +15,7 @@ export default function Contact() {
             <div className="mb-6">
               <FaPhone size={60} />
             </div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Customer Service *</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact Person</h2>
             <div className="space-y-3 text-gray-700">
               <div>
                 <a className="text-blue-600 hover:text-blue-800 font-medium">

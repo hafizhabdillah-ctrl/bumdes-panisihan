@@ -19,8 +19,9 @@ export default function TopBar({ showMainLinks = false }) {
 
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 px-6 border-b border-gray-200 h-16 items-stretch bg-white/95 backdrop-blur shadow-sm">
-      <div className="flex items-center font-bold text-green-800 text-xl cursor-pointer" onClick={() => navigate('/')}>
-        <p>BUMDes Panisihan</p>
+      <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
+        <img src="/logo.png" alt="Logo Panisihan" className="h-10 w-10 object-contain" />
+        <p className="text-xl font-bold text-green-800">BUMDes Panisihan</p>
       </div>
 
       <div className="flex flex-row justify-center text-gray-500 h-full">

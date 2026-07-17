@@ -54,7 +54,8 @@ export default function Main() {
             <div className="sticky top-0 z-50 flex items-center justify-between px-6 border-b border-gray-200 h-16 bg-white/95 backdrop-blur shadow-sm">
 
                 {/* Title */}
-                <div className="flex items-center font-bold text-green-800 text-xl cursor">
+                <div className="flex items-center gap-3 font-bold text-green-800 text-xl cursor-pointer">
+                    <img src="/logo.png" alt="Logo Panisihan" className="h-10 w-10 object-contain" />
                     <p>BUMDes Panisihan</p>
                 </div>
 
