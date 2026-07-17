@@ -49,7 +49,7 @@ export default function TopBar({ showMainLinks = false }) {
               <button
                 type="button"
                 onClick={() => setIsOpen((prev) => !prev)}
-                className={`flex items-center px-3 py-5 hover:border-b-2 text-sm font-medium transition bg-gray-100 ${isOpen ? 'text-green-800 border-b-2' : 'hover:text-green-800'}`}
+                className={`flex items-center px-3 py-5 hover:border-b-2 text-sm font-medium transition hover:bg-gray-100 ${isOpen ? 'text-green-800 border-b-2' : 'hover:text-green-800'}`}
                 aria-expanded={isOpen}
               >
                 Tentang
