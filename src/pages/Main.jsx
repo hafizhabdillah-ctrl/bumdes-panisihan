@@ -1,13 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
 import { unitUsaha } from "../../utils/unit";
 import { useNavigate } from "react-router-dom";
+import TopBar from "../../Components/TopBar";
 
 export default function Main() {
     const carouselRef = useRef(null);
-    const dropdownRef = useRef(null);
     const navigate = useNavigate();
     const [mounted, setMounted] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         try {
@@ -18,19 +17,6 @@ export default function Main() {
             try {
                 document.documentElement.style.scrollBehavior = "auto";
             } catch (e) {}
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        };
-
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
 
@@ -50,79 +36,7 @@ export default function Main() {
 
     return (
         <div style={{ opacity: mounted ? 1 : 0, transform: mounted ? "none" : "translateY(8px)", transition: "opacity 400ms ease, transform 400ms ease" }}>
-            {/* Topbar */}
-            <div className="sticky top-0 z-50 flex items-center justify-between px-6 border-b border-gray-200 h-16 bg-white/95 backdrop-blur shadow-sm">
-
-                {/* Title */}
-                <div className="flex items-center gap-3 font-bold text-green-800 text-xl cursor-pointer">
-                    <img src="/logo.png" alt="Logo Panisihan" className="h-10 w-10 object-contain" />
-                    <p>BUMDes Panisihan</p>
-                </div>
-
-                {/* Section */}
-                <div className="flex-1 flex flex-row justify-center text-gray-500 h-full">
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-200 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
-                        <a href="#beranda">Beranda</a>
-                    </div>
-
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-200 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
-                        <a href="#unit">Unit Usaha</a>
-                    </div>
-
-                    <div className="cursor-pointer flex items-center px-4 hover:bg-gray-200 hover:text--800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
-                        <a href="#desa">Desa</a>
-                    </div>
-                </div>
-
-                <div className="flex items-center text-gray-500 h-full">
-                    <div className="flex items-center hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all">
-                        <div ref={dropdownRef} className="relative">
-                            {/* Tombol Pemicu Dropdown */}
-                            <button
-                                type="button"
-                                onClick={() => setIsOpen((prev) => !prev)}
-                                className="cursor-pointer flex items-center px-4 py-4 hover:bg-gray-200 whitespace-nowrap focus:outline-none"
-                            >
-                                Tentang
-                                <svg className={`w-4 h-4 ml-1 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-
-                            {/* Menu Dropdown */}
-                            {isOpen && (
-                                <div className="absolute right-0 top-full mt-3 w-52 bg-white border border-gray-200 rounded-md shadow-lg z-50 py-1">
-                                    <button
-                                        type="button"
-                                        onClick={() => { setIsOpen(false); navigate('/tentang-kami'); }}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
-                                    >
-                                        Tentang Kami
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => { setIsOpen(false); navigate('/visi-misi'); }}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
-                                    >
-                                        Visi & Misi
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => { setIsOpen(false); navigate('/potensi-desa'); }}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
-                                    >
-                                        Potensi Desa
-                                    </button>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-
-                    <div className="flex items-center px-4 py-4 hover:bg-gray-200 hover:text-green-800 border-b-2 border-transparent hover:border-green-800 transition-all whitespace-nowrap">
-                        <button className="cursor-pointer hover:text-green-800" onClick={handleContactClick}>Kontak Kami</button>
-                    </div>
-                </div>
-            </div>
+            <TopBar showMainLinks />
 
             {/* Beranda */}
             <section id="beranda" className="relative overflow-hidden text-white scroll-mt-20">
