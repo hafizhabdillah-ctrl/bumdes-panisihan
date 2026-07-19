@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Main from './pages/Main';
 import TentangKami from './pages/TentangKami';
 import VisiMisi from './pages/VisiMisi';
@@ -12,9 +12,20 @@ import Umkm from './pages/Unit/Umkm';
 import Peternakan from './pages/Unit/Peternakan';
 import PengolahanSampah from './pages/Unit/PengolahanSampah';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/tentang-kami' element={<TentangKami />} />
