@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBar from '../../../Components/TopBar';
 
-export default function Umkm() {
+export default function Pertanian() {
     return (
         <div className="min-h-screen flex flex-col bg-slate-50/50">
             <TopBar showMainLinks={false} />
@@ -15,8 +15,8 @@ export default function Umkm() {
                         <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-green-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                         <div className="relative bg-white p-2 rounded-2xl shadow-xl overflow-hidden">
                             <img 
-                                src="/umkm.jpeg" 
-                                alt="UMKM Desa Panisihan" 
+                                src="/pertanian.jpg" 
+                                alt="Pertanian Desa Panisihan" 
                                 className="w-full h-80 sm:h-96 object-cover rounded-xl transform transition-transform duration-700 group-hover:scale-[1.02]"
                             />
                         </div>
@@ -24,15 +24,15 @@ export default function Umkm() {
                     
                     <div className="lg:col-span-7">
                         <h2 className="text-3xl mb-3 font-extrabold text-slate-800 tracking-tight">
-                            UMKM
+                            Pertanian
                         </h2>
                         <div className="h-1 w-45 bg-emerald-600 rounded"></div>
                         <div className='mt-6'>
                         <p className="text-slate-600 text-justify leading-relaxed text-base py-4">
-                            UMKM Desa Panisihan adalah pusat ekonomi lokal yang menjadi wadah bagi para pelaku usaha mikro desa untuk memasarkan produk-produk unggulan mereka.  
+                            Pertanian Desa Panisihan adalah tulang punggung ekonomi lokal yang telah menjadi salah satu unit usaha strategis Badan Usaha Milik Desa (BUMDes) Panisihan. 
                         </p>
                         <p className="text-slate-600 text-justify leading-relaxed text-base">
-                            UMKM ini bukan sekadar tempat transaksi jual beli, melainkan sebuah ekosistem kolaboratif yang dikelola langsung oleh masyarakat desa. Melalui UMKM, BUMDes Panisihan bertujuan memberdayakan potensi ekonomi lokal, meningkatkan kesejahteraan warga, sekaligus memperkenalkan kekayaan produk khas Desa Panisihan kepada masyarakat luas.
+                            Sebagai salah satu pilar utama perekonomian desa, sektor pertanian di Desa Panisihan memiliki peran vital dalam menopang ketahanan pangan dan meningkatkan kesejahteraan masyarakat.  
                         </p>
                         </div>
                     </div>

@@ -19,15 +19,15 @@ export default function Contact() {
             <div className="space-y-3 text-gray-700">
               <div>
                 <a className="text-blue-600 hover:text-blue-800 font-medium">
-                  01234567891011
+                  089514916349
                 </a>
-                <p>Contact Person 1</p>
+                <p>Pak Taufiq - Pengurus Sport Center, Peternakan, dan Pertanian</p>
               </div>
               <div>
                 <a className="text-blue-600 hover:text-blue-800 font-medium">
-                  01234567891011
+                  089504024777
                 </a>
-                <p>Contact Person 2</p>
+                <p>Pak Kadir - Pengurus UMKM</p>
               </div>
             </div>
           </div>

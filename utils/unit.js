@@ -3,35 +3,35 @@ export const unitUsaha = [
     id: 1,
     title: "Sport Center",
     description: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-    image: "/placeholder.png",
+    image: "/sportcenter.jpeg",
     link: "/unit/sport-center"
   },
   {
     id: 2,
-    title: "Kolam Renang",
+    title: "Pertanian",
     description: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
     image: "/placeholder.png",
-    link: "/unit/kolam-renang"
+    link: "/unit/pertanian"
   },
   {
     id: 3,
-    title: "Playground",
-    description: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-    image: "/placeholder.png",
-    link: "/unit/playground"
-  },
-  {
-    id: 4,
     title: "UMKM",
     description: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-    image: "/placeholder.png",
+    image: "/umkm.jpeg",
     link: "/unit/umkm"
   },
   {
-    id: 5,
-    title: "Peternakan Kambing",
+    id: 4,
+    title: "Peternakan",
     description: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
     image: "/placeholder.png",
-    link: "/unit/peternakan-kambing"
+    link: "/unit/peternakan"
+  },
+  {
+    id: 5,
+    title: "Pengolahan Sampah",
+    description: "Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+    image: "/placeholder.png",
+    link: "/unit/pengolahan-sampah"
   },
 ];
