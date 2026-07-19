@@ -15,7 +15,7 @@ export default function PengolahanSampah() {
                         <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-green-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                         <div className="relative bg-white p-2 rounded-2xl shadow-xl overflow-hidden">
                             <img 
-                                src="/pengolahan.jpeg" 
+                                src="/pengolahansampah.jpeg" 
                                 alt="Pengolahan Sampah Desa Panisihan" 
                                 className="w-full h-80 sm:h-96 object-cover rounded-xl transform transition-transform duration-700 group-hover:scale-[1.02]"
                             />
