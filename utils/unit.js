@@ -9,7 +9,7 @@ export const unitUsaha = [
   {
     id: 2,
     title: "Pertanian",
-    description: "Memajukan ketahanan pangan desa",
+    description: "Memaksimalkan potensi lahan pertanian dengan inovasi modern",
     image: "/pertanian.jpeg",
     link: "/unit/pertanian"
   },
