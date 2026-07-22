@@ -177,6 +177,9 @@ export default function TopBar({ showMainLinks = false }) {
             <button type="button" onClick={() => handleNavigation('/visi-misi')} className="text-left rounded-lg px-3 py-2 text-sm font-medium hover:bg-green-50 hover:text-green-800">Visi & Misi</button>
             <button type="button" onClick={() => handleNavigation('/potensi-desa')} className="text-left rounded-lg px-3 py-2 text-sm font-medium hover:bg-green-50 hover:text-green-800">Potensi Desa</button>
             <button type="button" onClick={() => handleNavigation('/contact')} className="text-left rounded-lg px-3 py-2 text-sm font-medium hover:bg-green-50 hover:text-green-800">Kontak Kami</button>
+            <button type="button" onClick={() => handleNavigation('/anggota')} className="text-left rounded-lg px-3 py-2 text-sm font-medium hover:bg-green-50 hover:text-green-800">Anggota</button>
+            <button type="button" onClick={() => handleNavigation('/aset')} className="text-left rounded-lg px-3 py-2 text-sm font-medium hover:bg-green-50 hover:text-green-800">Aset</button>
+            <button type="button" onClick={() => handleNavigation('/keuangan')} className="text-left rounded-lg px-3 py-2 text-sm font-medium hover:bg-green-50 hover:text-green-800">Keuangan</button>
           </div>
         </div>
       )}
