@@ -5,6 +5,9 @@ import TentangKami from './pages/TentangKami';
 import VisiMisi from './pages/VisiMisi';
 import PotensiDesa from './pages/PotensiDesa';
 import Contact from './pages/Contact';
+import Keuangan from './pages/Keuangan';
+import Aset from './pages/Aset';
+import Anggota from './pages/Anggota';
 
 import SportCenter from './pages/Unit/SportCenter';
 import Pertanian from './pages/Unit/Pertanian';
@@ -32,6 +35,9 @@ export default function App() {
         <Route path='/visi-misi' element={<VisiMisi />} />
         <Route path='/potensi-desa' element={<PotensiDesa />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/keuangan' element={<Keuangan />} />
+        <Route path='/aset' element={<Aset />} />
+        <Route path='/anggota' element={<Anggota />} />
 
         <Route path='/unit/sport-center' element={<SportCenter />} />
         <Route path='/unit/pertanian' element={<Pertanian />} />
